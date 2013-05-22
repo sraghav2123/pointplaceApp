@@ -1,4 +1,4 @@
-define([ "jquery","backbone", "jquery.mobile" "views/HomeView", "views/Page1View", "views/Page2View" ], function( $, Backbone,, HomeView, Page1View, Page2View) {
+define([ "jquery","backbone", "jquery_mobile", "views/HomeView", "views/Page1View", "views/Page2View" ], function( $, Backbone, JQM, HomeView, Page1View, Page2View) {
 
 
     var AppRouter = Backbone.Router.extend({
