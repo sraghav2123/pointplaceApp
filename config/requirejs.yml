@@ -1,0 +1,22 @@
+modules:
+  - name:'application'
+paths:
+  jquery: 'jquery'
+  jquery_ujs: 'jquery_ujs'
+  jquery_mobile: 'jquery.mobile'
+  jquery_mobile_config: 'jquery.mobile-config'
+  underscore: 'underscore'
+  backbone: 'backbone'
+
+shim:
+  underscore:
+    exports: '_'
+  backbone:
+    deps: [ 'underscore', 'jquery' ]
+    exports: 'Backbone'
+  jquery_mobile_config:
+    deps: ['jquery']
+  jquery_mobile:
+    deps: ['jquery', 'jquery_mobile_config']  
+  jquery_ujs:
+    deps: [ 'jquery' ]
