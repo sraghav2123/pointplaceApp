@@ -12,7 +12,7 @@
 //
 
 // Includes File Dependencies
-define([ "jquery", "backbone", "jquery_mobile","pointplace" ], function( $, Backbone, JQM, Pointplace ) {
+define([ "jquery", "backbone", "jqui","pointplace" ], function( $, Backbone, jqui, Pointplace ) {
 
 
 		Pointplace.initialize();

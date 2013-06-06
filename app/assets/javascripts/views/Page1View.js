@@ -1,9 +1,9 @@
-define(["jquery","backbone","text!page1.html"], function($, Backbone, page1Template) {
+define(["jquery","jqui","backbone","text!page1.html"], function($, jqui, Backbone, page1Template) {
 	var Page1View = Backbone.View.extend({
 
 	    initialize:function () {
-	    	data = {};
 	        this.template = _.template(page1Template);
+	        this.render();
 	    },
 
 	    render:function (eventName) {

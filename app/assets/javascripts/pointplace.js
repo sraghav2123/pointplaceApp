@@ -1,4 +1,4 @@
-define(["jquery","backbone", "routers/approuter"], function($, Backbone, AppRouter) {
+define(["jquery", "jqui" ,"backbone", "routers/approuter"], function($, jqui, Backbone, AppRouter) {
 		
 		console.log("router loaded pointplace loading..");
 
@@ -8,7 +8,6 @@ define(["jquery","backbone", "routers/approuter"], function($, Backbone, AppRout
 		  Views: {},
 		  Routers: {},
 		  initialize: function() {
-		    alert('Hello from Backbone!');
 		      new AppRouter();
 		      Backbone.history.start();	
 		  }

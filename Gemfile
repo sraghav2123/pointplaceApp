@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'backbone-on-rails'
-gem 'jquery_mobile_rails'
+gem 'jqmobi-rails'
 gem 'requirejs-rails'
 
 
@@ -22,8 +22,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

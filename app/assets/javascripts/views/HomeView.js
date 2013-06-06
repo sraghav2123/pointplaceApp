@@ -1,13 +1,13 @@
-define(["jquery","backbone","text!home.html"], function($, Backbone, homeTemplate) {
+define(["jquery","jqui","backbone","text!home.html"], function($, jqui, Backbone, homeTemplate) {
 	var HomeView = Backbone.View.extend({
 
 	    initialize:function () {
-	    	data = {};
 	        this.template = _.template(homeTemplate);
+	        this.render();
 	    },
 
 	    render:function (eventName) {
-	        $(this.el).html(this.template());
+	        this.$el.html(this.template());
 	        return this;
 	    }
 	});
