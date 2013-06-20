@@ -12,9 +12,9 @@
 //
 
 // Includes File Dependencies
-define([ "jquery", "backbone", "jqui","pointplace" ], function( $, Backbone, jqui, Pointplace ) {
+define([ "jquery", "backbone","pointplace" ], function( $, Backbone, Pointplace ) {
 
-
+		
 		Pointplace.initialize();
 
 } );

@@ -1,7 +1,12 @@
 Pointplace::Application.routes.draw do
 
   root :to => 'home#index'
+  
+  match 'signup' => 'users#new', :via => :get
 
+  resource :session, :only => [:new, :create, :destroy]
+
+  resource :account, :controller => 'users', :only => [:new, :create]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,4 +1,4 @@
-define(["jquery", "jqui" ,"backbone", "routers/approuter"], function($, jqui, Backbone, AppRouter) {
+define(["jquery","jqui","backbone", "routers/approuter"], function($,jqui, Backbone, AppRouter) {
 		
 		console.log("router loaded pointplace loading..");
 
@@ -8,8 +8,27 @@ define(["jquery", "jqui" ,"backbone", "routers/approuter"], function($, jqui, Ba
 		  Views: {},
 		  Routers: {},
 		  initialize: function() {
-		      new AppRouter();
-		      Backbone.history.start();	
+
+			$( document ).ready(function() {
+					  	// var webRoot = "./";
+			            // $.ui.autoLaunch = false; //By default, it is set to true and you're app will run right away.  We set it to false to show a splashscreen
+			            // This function runs when the body is loaded.
+
+				
+				// Underscore.js Template Settings
+				_.templateSettings = {
+					interpolate: /\{\{\=(.+?)\}\}/g,
+					evaluate: /\{\{(.+?)\}\}/g
+				};        
+			            
+			    console.log( "ready!" );
+
+			    $.ui.backButtonText = "Back";
+			    $.ui.autoBoot();
+
+			    new AppRouter();
+			    Backbone.history.start();
+			});
 		  }
 		};
 

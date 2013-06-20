@@ -7,8 +7,9 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'backbone-on-rails'
-gem 'jqmobi-rails'
-gem 'requirejs-rails'
+gem 'requirejs-rails' , :git => 'https://github.com/coderanger/requirejs-rails.git' # See https://github.com/jwhitley/requirejs-rails/pull/59
+gem 'bcrypt-ruby', :require => 'bcrypt'
+gem 'email_validator'
 
 
 # Gems used only for assets and not required
